@@ -3,7 +3,7 @@ import prisoner
 
 number_of_prisoners = 100
 attempts_per_prisoner = 50
-test_attempts = 100
+test_attempts = 1000
 successful_escapes = 0
 
 if __name__ == '__main__':
@@ -24,5 +24,5 @@ if __name__ == '__main__':
         if len([p for p in prisoners if p.found_number]) == number_of_prisoners:
             successful_escapes += 1
 
-    print('Escape Success Rate: %.0f%% of %d attempts' % (100 * (successful_escapes / test_attempts), test_attempts†))
+    print('Escape Success Rate: %.0f%% of %d attempts' % (100 * (successful_escapes / test_attempts), test_attempts))
 
